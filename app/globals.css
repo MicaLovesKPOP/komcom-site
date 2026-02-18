@@ -6,14 +6,14 @@
   color-scheme: dark;
 
   /* KomCom design tokens (HSL values, space-separated) */
-  --bg: 205 25% 5%;       /* #0B0F12 */
-  --panel: 206 33% 10%;   /* #111820 */
-  --panel2: 208 31% 8%;   /* #0F151C */
-  --text: 206 31% 93%;    /* #E7EDF2 */
-  --muted: 207 13% 69%;   /* #A7B2BC */
-  --border: 206 27% 18%;  /* #22303B */
-  --accent: 99 60% 50%;   /* #68CD32 */
-  --accent2: 84 69% 68%;  /* #BFEA6A */
+  --bg: 206 24% 6%;
+  --panel: 212 31% 10%;
+  --panel2: 212 30% 8%;
+  --text: 207 30% 93%;
+  --muted: 209 14% 70%;
+  --border: 206 27% 18%;
+  --accent: 99 61% 50%;
+  --accent2: 80 75% 67%;
 }
 
 html, body { height: 100%; }
