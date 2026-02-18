@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const nav = [
   { href: "/prebuilts", label: "Prebuilts" },
@@ -13,17 +14,16 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-bg/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <Link href="/" className="flex items-center gap-3">
-          {/* Put your logo at /public/logo.png and replace this placeholder */}
-          <div className="h-9 w-9 rounded bg-panel ring-1 ring-border grid place-items-center text-sm text-muted">
-            KC
-          </div>
-          <div className="leading-tight">
-            <div className="font-semibold tracking-tight">KomCom</div>
-            <div className="text-xs text-muted">Performance-per-euro PCs</div>
-          </div>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.webp"
+            alt="KomCom"
+            width={220}
+            height={60}
+            priority
+            className="h-10 w-auto object-contain"
+          />
         </Link>
-
         <nav className="hidden items-center gap-5 md:flex">
           {nav.map((n) => (
             <Link key={n.href} href={n.href} className="text-sm text-muted hover:text-text">
