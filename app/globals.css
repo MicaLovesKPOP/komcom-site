@@ -2,7 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: dark; }
+:root {
+  color-scheme: dark;
+
+  /* KomCom design tokens (HSL values, space-separated) */
+  --bg: 220 18% 6%;
+  --panel: 220 18% 9%;
+  --border: 220 10% 20%;
+  --text: 210 20% 96%;
+  --muted: 215 10% 70%;
+  --accent: 107 60% 45%;
+}
 
 html, body { height: 100%; }
 
