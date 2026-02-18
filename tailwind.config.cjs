@@ -5,7 +5,16 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        bg: "hsl(var(--bg))",
+        panel: "hsl(var(--panel))",
+        border: "hsl(var(--border))",
+        text: "hsl(var(--text))",
+        muted: "hsl(var(--muted))",
+        accent: "hsl(var(--accent))",
+      },
+    },
   },
   plugins: [],
 };
